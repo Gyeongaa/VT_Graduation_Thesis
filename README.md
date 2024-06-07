@@ -8,8 +8,30 @@ The second approach assesses the comparative performance of two fine-tuning appr
 
 The thesis text can be dowloaded from here.
 This repository contains:
-
+- The instruction to download used datasets
 - The code for preprocessing the ICBHI dataset
 - The code for preprocessing the Coswara dataset
 - The code for training model using ICBHI dataset
 - The fine-tuning code using Coswara dataset
+
+## Dataset
+### ICBHI 2017 
+Please download the dataset via official site.
+You can download official label, split and respiratory samples below link:
+
+```
+https://bhichallenge.med.auth.gr/ICBHI_2017_Challenge
+```
+
+
+### Coswara
+Please download the dataset using below command(It will takes some time):
+
+```
+git clone https://github.com/iiscleap/Coswara-Data.git
+```
+
+## Training Code
+
+
+
