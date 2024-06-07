@@ -9,7 +9,7 @@ The second approach assesses the comparative performance of two fine-tuning appr
 The thesis text can be dowloaded from here.
 This repository contains:
 
-- The code for preprocessing the ICBHI dataset
+- The code for preprocessing the ICBHI dataset
 - The code for preprocessing the Coswara dataset
 - The code for training model using ICBHI dataset
 - The fine-tuning code using Coswara dataset
