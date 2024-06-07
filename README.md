@@ -7,6 +7,8 @@ In my research, I focus on two main approaches aimed at refining the efficiency 
 The second approach assesses the comparative performance of two fine-tuning approaches: layer freezing versus classifier adjustment. These hypotheses all demonstrate the successful integration of two breath sound datasets through transfer learning.
 
 The thesis text can be dowloaded from here.
+
+
 This repository contains:
 - The instruction to download used datasets
 - The code for preprocessing the ICBHI dataset
