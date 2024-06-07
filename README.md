@@ -28,7 +28,7 @@ https://bhichallenge.med.auth.gr/ICBHI_2017_Challenge
 
 
 ### Coswara
-Please download the dataset using below command(It will takes some time):
+Please download the dataset using below command and follow their detail instruction to extract data from compressed files.
 
 ```
 git clone https://github.com/iiscleap/Coswara-Data.git
