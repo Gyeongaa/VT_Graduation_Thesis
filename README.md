@@ -16,7 +16,8 @@ This repository contains:
 - The code for training model using ICBHI dataset
 - The fine-tuning code using Coswara dataset
 
-## Dataset
+
+## Step1: Downlaod Datasets
 ### ICBHI 2017 
 Please download the dataset via official site.
 You can download official label, split and respiratory samples below link:
@@ -33,7 +34,65 @@ Please download the dataset using below command(It will takes some time):
 git clone https://github.com/iiscleap/Coswara-Data.git
 ```
 
-## Training Code
+## Step2: Set Up Work Environment 
+All tasks were performed on the [Hábrók](https://www.rug.nl/society-business/centre-for-information-technology/research/services/hpc/facilities/habrok-hpc-cluster?lang=en)
+; High Performance Computing (HPC) Cluster at the University of Groningen. For the training of the models, NVIDIA A100 GPUs within this HPC environment were used. 
+
+First install required libraries by executing the following command:
+```
+pip install -r requirements.txt
+```
+
+If you are working on Hábrók, you also need to follow these commands:
+
+```
+module load torchvision/0.13.1-foss-2022a
+module load matplotlib/3.5.2-foss-2022a
+module load PyTorch/1.12.0-foss-2022a-CUDA-11.7.0
+```
 
 
+### Step3: Run Code
+
+#### Create the pre-trained model:
+
+```
+python3 train2.py
+          --data_dir /PATH/TO/DATASET \\
+          --label_file /PATH/TO/LABEL_FILE \\
+          --split_file /PATH/TO/SPLIT_FILE \\
+          --model_path /PATH/TO/MODEL \\
+          --lr 1e-5 \\
+          --batch_size 64 \\
+          --num_epochs 20 \\
+```
+
+#### Fine-tuning stage (Strategy 1):
+```
+python3 train3.py
+--data_dir /PATH/TO/DATASET \\
+          --label_file /PATH/TO/LABEL_FILE \\
+          --split_file /PATH/TO/SPLIT_FILE \\
+          --checkpoint /PATH/TO/MODEL/CHECKPOINT \\
+          --model_path /PATH/TO/MODEL(Saved) \\
+          --freeze_up_to (choose from 1 to 3) \\
+          -lr 1e-4 \\
+          --batch_size 64 \\
+          --num_epochs 20
+```
+
+#### Fine-tuning stage (Strategy 2):
+
+```
+python3 train3.py
+--data_dir /PATH/TO/DATASET \\
+          --label_file /PATH/TO/LABEL_FILE \\
+          --split_file /PATH/TO/SPLIT_FILE \\
+          --checkpoint /PATH/TO/MODEL/CHECKPOINT \\
+          --model_path /PATH/TO/MODEL(Saved) \\
+          --freeze_up_to 4 \\
+          -lr 1e-4 \\
+          --batch_size 64 \\
+          --num_epochs 20 \\
+```
 
