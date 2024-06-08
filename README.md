@@ -51,7 +51,7 @@ module load matplotlib/3.5.2-foss-2022a
 module load PyTorch/1.12.0-foss-2022a-CUDA-11.7.0
 ```
 
-Additionally, it is possible that some libraries are missing from requirements.txt during debugging. In this case, install the most recent version of the library.
+Additionally, it is possible that some libraries are missing from requirements.txt during debugging. In this case, please install the most recent version of the library.
 
 
 ### Step3: Run Code
