@@ -74,7 +74,7 @@ python3 train2.py
           --num_epochs 20 \\
 ```
 Repository contains the extracted models from the fine-tuning stages. 
-The models, which are fine-tune1,2,3 and 4, are linked to strategy 1-1, 1-2, 1-3 and 1-4. Please check detail information in the thesis.
+The models, which are fine-tune1,2,3 and 4, are matched to strategy 1-1, 1-2, 1-3 and 1-4. Please check detail information in the thesis.
 
 #### 2️⃣ Fine-tuning stage (Strategy 1):
 ```
