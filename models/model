@@ -1,6 +1,8 @@
 Since the size of model is over 25mb, it cannot be uploaded to git-hub. 
 So please download via google drive link below:
 
-model2.pth: which is the pre-trained model with ICBHI dataset.
-https://drive.google.com/file/d/1O6a3nDcgHVerUzUmy4m2ewrdOgF1U3Ju/view?usp=sharing
+The pre-trained model (Stage 1):
+model2.pth: https://drive.google.com/file/d/1O6a3nDcgHVerUzUmy4m2ewrdOgF1U3Ju/view?usp=sharing
 
+The extracted models while fine-tuning process (Stage 2):
+fine-tune1,2,3 and 4.pth: https://drive.google.com/file/d/1wKmO8eGmb4VZDTkfxKnFyeamK8OvBvHp/view?usp=sharing
