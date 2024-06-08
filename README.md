@@ -60,9 +60,10 @@ module load PyTorch/1.12.0-foss-2022a-CUDA-11.7.0
 
 
 ### Step3: Run Code
+Training and validation perfoms together by executing the below code. 
+You will receive a report containing information such as f1 score, validation loss, and validation accuray after finishing the training.
 
 #### 1️⃣ Create the pre-trained model:
-
 ```
 python3 train2.py
           --data_dir /PATH/TO/DATASET \\
