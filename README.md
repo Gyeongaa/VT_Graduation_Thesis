@@ -17,7 +17,7 @@ The thesis text can be dowloaded from **here**. (The link will be updated after 
 - The fine-tuning code using Coswara dataset: `train3.py`
 - The code for the used ResNet34 model: `network_cnn.py`, `network_hybrid.py` (Please create `nets` folder and then put them inside when you run the codes to avoid errors)
 - The used labels, splits file: please refer `lables`, `splits` folders
-- The pre-trained model: `model2.pth` and the extracted models during fine-tuning process (As the models' size is over 25mb, the google drive link is introduced. You can download the model through the link in `models` folder)
+- The pre-trained model: `model2.pth` and the extracted models during fine-tuning process (As the models' size is over 25mb, the google drive link is introduced. You can download the model through the link in `models` folder😁)
 - The instruction how to run the codes
 
   
