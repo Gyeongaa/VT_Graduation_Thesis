@@ -6,16 +6,21 @@ This repository contains the materials and findings related to my MSc thesis, "E
 In my research, I focus on two main approaches aimed at refining the efficiency and effectiveness of diagnostic models trained on respiratory sound data. The first approach investigates the impact of different layer freezing techniques during transfer learning, exploring how freezing up to the 1st, 2nd, and 3rd layers of a Residual Networks (ResNet)-based model affects the accuracy and loss metrics when training with the ICBHI and Coswara datasets. 
 The second approach assesses the comparative performance of two fine-tuning approaches: layer freezing versus classifier adjustment. These hypotheses all demonstrate the successful integration of two breath sound datasets through transfer learning.
 
-The thesis text can be dowloaded from here.
+The thesis text can be dowloaded from **here**. (The link will be updated after getting reviewed by supervisors in July)
 
 
-This repository contains:
+**This repository contains:**
 - The instruction to download used datasets
-- The code for preprocessing the ICBHI dataset
-- The code for preprocessing the Coswara dataset
-- The code for training model using ICBHI dataset
-- The fine-tuning code using Coswara dataset
+- The code for preprocessing the ICBHI dataset: `image_dataloader2.py`, `utils.py`
+- The code for preprocessing the Coswara dataset: `image_dataloader3.py`, `utils.py`
+- The code for training model using ICBHI dataset: `train2.py`
+- The fine-tuning code using Coswara dataset: `train3.py`
+- The code for the used ResNet34 model: `network_cnn.py`, `network_hybrid.py` (Please create `nets` folder and then put them inside when you run the codes to avoid errors)
+- The used labels, splits file: please refer `lables`, `splits` folders
+- The pre-trained model: `model2.pth` (As the model size is over 25mb, the google drive link is introduced. You can download the model through the link in `models` folder)
+- The instruction how to run the codes
 
+  
 
 ## Step1: Downlaod Datasets
 ### ICBHI 2017 
